@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body {
+    display: flex;
+}
+
+.portrait {
+    height: 100vh; 
+    width: 66.6vw;
+    background-image: url('./Images/portrait.jpg');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.narrativeContainer {
+    height: 100vh; 
+    width: 33.4vw; 
+    overflow-y: auto;
+}
+
+.narrative {
+    padding: 70px 60px;
+}
+
+h1 {
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 0 8px 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 0 4px 0;
+    margin: 0;
+}
+
+button {
+    margin: 20px 0;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+.socialMediaLogosContainer {
+    display: flex; 
+    padding: 15px 0 0 0;
+}
+
+.socialMediaLogos {
+    font-size: 2.6em; 
+    color: #999999; 
+    margin: 0 30px 0 0;
+}
+
+.modalText {
+    font-size: 13px; 
+    font-weight: 400; 
+    font-style: italic;
+}
+
+a:link {
+    text-decoration: none;
+    color: #999999;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #999999;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ADADAD;
+}
+
+a:active {
+    text-decoration: none;
+    color: #818181;
+}
+
+.btn-primary {
+    background-color: #305B90;
+    border-color: #305B90;
+}
+
+.btn-primary:hover {
+    background-color: #466c9c;
+}
+
+.btn-primary:active {
+    background-color: #466c9c;
+}
+
+
+
+@media only screen and (min-width: 801px){
+    .portraitText {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portrait {
+        height: 68vw; 
+        width: 100vw;
+    }
+
+    .narrativeContainer {
+        height: 100%; 
+        width: 100vw; 
+    }
+
+    .narrative {
+        padding: 30px;
+    }
+
+    .titles {
+        display: none;
+    }
+
+    .portraitText {
+        height: 68vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    button {
+        margin: 0 0 20px 0;
+    }
+    
+    .socialMediaLogosContainer {
+        padding: 15px 0 0 0;
+        justify-content: center;
+    }    
+    
+}
