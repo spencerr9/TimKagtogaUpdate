@@ -7,7 +7,7 @@ body {
 .portrait {
     height: 100vh; 
     width: 66.6vw;
-    background-image: url('./Images/portrait.jpg');
+    background-image: url('./Images/IMG_1906.JPG');
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center top;
