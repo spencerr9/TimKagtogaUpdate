@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
 
 body {
     display: flex;
@@ -7,7 +7,7 @@ body {
 .portrait {
     height: 100vh; 
     width: 66.6vw;
-    background-image: url('./Images/IMG_1906.JPG');
+    background-image: url('./Images/timBW.png');
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center top;
@@ -47,11 +47,15 @@ button {
     font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p {
+p, i {
     font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 23px;
+}
+
+i {
+    font-style: italic;
 }
 
 .socialMediaLogosContainer {
@@ -62,7 +66,7 @@ p {
 .socialMediaLogos {
     font-size: 2.6em; 
     color: #999999; 
-    margin: 0 15px;
+    margin: 0 30px 0 0;
 }
 
 .modalText {
@@ -119,7 +123,8 @@ a:active {
     }
 
     .portrait {
-        height: 68vw; 
+        /* height: 90vw;  */
+        /* height was at 68 */
         width: 100vw;
     }
 
@@ -137,12 +142,18 @@ a:active {
     }
 
     .portraitText {
-        height: 68vw;
+        /* height: 90vw; */
+        /* height was at 68 */
         color: white;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    .portrait, .portraitText {
+        height: 90vw;
+        /* height was at 68 */
     }
 
     button {
@@ -152,6 +163,10 @@ a:active {
     .socialMediaLogosContainer {
         padding: 15px 0 0 0;
         justify-content: center;
+    }    
+
+    .socialMediaLogos {
+        margin: 0 15px;
     }    
     
 }
