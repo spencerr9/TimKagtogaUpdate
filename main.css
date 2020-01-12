@@ -123,8 +123,6 @@ a:active {
     }
 
     .portrait {
-        /* height: 90vw;  */
-        /* height was at 68 */
         width: 100vw;
     }
 
@@ -142,8 +140,6 @@ a:active {
     }
 
     .portraitText {
-        /* height: 90vw; */
-        /* height was at 68 */
         color: white;
         display: flex;
         flex-direction: column;
@@ -153,7 +149,6 @@ a:active {
 
     .portrait, .portraitText {
         height: 90vw;
-        /* height was at 68 */
     }
 
     button {
